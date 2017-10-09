@@ -7,7 +7,7 @@
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate",
     "dokku": {
-      "postdeploy": "bundle exec rake db:migrate"
+      "predeploy": "bundle exec rake db:migrate"
     }
   },
   "env": {
